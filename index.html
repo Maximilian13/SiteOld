@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python 011</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo_white.png" alt="" id="logo">
+        <h1>Олимпиада Python 011</h1>
+    </header>
+    <main>
+        <form action='/' method='POST' class="form" enctype="multipart/form-data">
+            <div class="container">
+                <label for="POST-name">Введите ваше Имя и Фамилию:</label>
+                <input id="POST-name" type="text" name="username">
+                <label for="POST-email">Введите вашу почту:</label>
+                <input id="POST-email" type="email" name="useremail">
+            </div>
+            <div class="tasks">
+                <div class="task">
+                    <h1>Задача 1</h1><h2>Колхозные работы</h2>
+                    <h3 class="task-text">Колхозники в количестве n человек приехали с полей и решили справедливо разделить урожай. Из m килограмм картошки каждый получил свою часть согласно своему возрасту. Самый молодой колхозник взял a килограмм картошки, а каждый следующий по возрасту колхозник брал на один килограмм больше, чем его предыдущий коллега. Последним был глава колхоза, которому досталось вдвое больше от запланированного. Очевидно, что после него картошки больше не осталось. Сколько было колхозников, если известны a и m. Колхозников должно быть не менее 2-х.</h3>
+                    <h4 class="task-input"><strong>Входные данные:</strong> Первая строка входного файла INPUT.TXT содержит числа a и m – сколько взял картошки самый молодой колхозник и количество картошки.</h4>
+                    <h4 class="task-output"><strong>Выходные данные:</strong> В выходной файл OUTPUT.TXT выведите одно целое число - количество колхозников.
+                    </h4>
+                    <table>
+                        <tr class="table-titles">
+                            <th>Входные данные</th>
+                            <th>Выходные данные</th>
+                        </tr>
+                        <tr>
+                            <th>5 25</th>
+                            <th>3</th>
+                        </tr>
+                    </table>
+                    <div class="input__wrapper">
+                        <input name="task1" type="file" id="input__file1" class="input input__file">
+                        <label for="input__file1" class="input__file-button">
+                           <span class="input__file-icon-wrapper"><img class="input__file-icon" src="download.png" alt="Выбрать файл" width="25"></span>
+                           <span class="input__file-button-text">Выберите файл</span>
+                        </label>
+                        <p id="file-name1"></p>
+                     </div>
+                </div>
+                <div class="task">
+                    <h1>Задача 2</h1><h2>Автоматы с игрушками</h2>
+                    <h3 class="task-text">Вася очень любит профессионально играть в автоматы с игрушками и всегда выигрывает. Однажды он пришёл в магазин и увидел, что там стоит N автоматов с игрушками. У каждого автомата своя стоимость игры (n1, n2, ...). Чем дороже игра, тем более крутую игрушку можно вытащить. Вася взял с собой определённое количество денег C. Вася не может играть в один и тот же автомат больше одного раза. Васю не волнует количество игрушек, его волнует крутость игрушек. Необходимо вывести количество денег, которое осталось у Васи после игр (а Вася играет, пока у него хватает денег продолжать). Учитывайте, что мальчик вначале тянет более крутые игрушки.</h3>
+                    <h4 class="task-input"><strong>Входные данные:</strong>Первая строка входного файла INPUT.TXT содержит количество автоматов с игрушками в магазине N и количество монет Васи C. Вторая строка содержит стоимости игры в автоматы.</h4>
+                    <h4 class="task-output"><strong>Выходные данные:</strong>В выходной файл OUTPUT.TXT выведите одно целое число - количество денег, которые остались у Васи после игр.
+                    </h4>
+                    <table>
+                        <tr class="table-titles">
+                            <th>Входные данные</th>
+                            <th>Выходные данные</th>
+                        </tr>
+                        <tr>
+                            <th>8 100<br>10 12 8 15 6 17 8 24</th>
+                            <th>0</th>
+                        </tr>
+                        <tr>
+                            <th>12 250<br>50 67 87 14 52 23 42 12 38 16 19 24</th>
+                            <th>2</th>
+                        </tr>
+                    </table>
+                    <div class="input__wrapper">
+                        <input name="task2" type="file" id="input__file2" class="input input__file">
+                        <label for="input__file2" class="input__file-button">
+                           <span class="input__file-icon-wrapper"><img class="input__file-icon" src="download.png" alt="Выбрать файл" width="25"></span>
+                           <span class="input__file-button-text">Выберите файл</span>
+                        </label>
+                        <p id="file-name2"></p>
+                     </div>
+                </div>
+                <div class="task">
+                    <h1>Задача 3</h1><h2>Антонио-пиццеед</h2>
+                    <h3 class="task-text">Антонио очень любит пиццу. В любом виде и с любыми начинками. Однажды, пребывая в голодном состоянии, Антонио зашел в пиццерию и увидел, что в продаже есть его любимые пиццы: с ананасами, с кукурузой и с шоколадом. Антонио желает купить как можно больше пицц, но есть проблема. Количество пицц ограничено так же, как и количество денег у Антонио. Помогите Антонио определить максимально возможное количество пицц, которое он может купить.</h3>
+                    <h4 class="task-input"><strong>Входные данные:</strong> Первая строка входного файла INPUT.TXT содержит числа P1, P2 и P3 – стоимость пицц с ананасами, с кукурузой и с шоколадом соответственно. Во второй строке определены значения N1, N2 и N3 – количество соответствующих пицц в продаже. В третьей строке записано число R – количество денег у Антонио. Все числа во входных данных целые неотрицательные, не превосходящие 1018.</h4>
+                    <h4 class="task-output"><strong>Выходные данные:</strong> В выходной файл OUTPUT.TXT выведите одно целое число - максимальное количество пицц, которые сможет купить Антонио.
+                    </h4>
+                    <table>
+                        <tr class="table-titles">
+                            <th>Входные данные</th>
+                            <th>Выходные данные</th>
+                        </tr>
+                        <tr>
+                            <th>5 3 8<br>2 6 4<br>23</th>
+                            <th>7</th>
+                        </tr>
+                        <tr>
+                            <th>15 18 20<br>1 4 100<br>1000000</th>
+                            <th>105</th>
+                        </tr>
+                    </table>
+                    <div class="input__wrapper">
+                        <input name="task3" type="file" id="input__file3" class="input input__file">
+                        <label for="input__file3" class="input__file-button">
+                           <span class="input__file-icon-wrapper"><img class="input__file-icon" src="download.png" alt="Выбрать файл" width="25"></span>
+                           <span class="input__file-button-text">Выберите файл</span>
+                        </label>
+                        <p id="file-name3"></p>
+                     </div>
+                </div>
+                <div class="task">
+                    <h1>Задача 4</h1><h2>Биатлон (или нет?)</h2>
+                    <h3 class="task-text">Совсем недавно прошёл супер турнир по биатлону, в котором участвовали 5 спортсменов из разных стран. В ходе соревнований каждый участник стрелял по шести мишеням. Аня работает судьёй на этих соревнованиях. Ей принесли файл, в котором записаны результаты участников. Девушке необходимо вывести номер победителя.</h3>
+                    <h4 class="task-input"><strong>Входные данные:</strong> Каждая строка входного файла INPUT.TXT содержит номер участника и 6 чисел: 0 или 1. Число 0 - соответствует значению, что игрок не попал, а число 1 - что попал.</h4>
+                    <h4 class="task-output"><strong>Выходные данные:</strong> В выходной файл OUTPUT.TXT выведите одно целое число - номер участника победителя.
+                    </h4>
+                    <table>
+                        <tr class="table-titles">
+                            <th>Входные данные</th>
+                            <th>Выходные данные</th>
+                        </tr>
+                        <tr>
+                            <th>132 1 1 1 0 1 1<br>
+                                2 0 0 0 1 0 1<br>
+                                56 1 1 1 1 0 0</th>
+                            <th>132</th>
+                        </tr>
+                    </table>
+                    <div class="input__wrapper">
+                        <input name="task4" type="file" id="input__file4" class="input input__file">
+                        <label for="input__file4" class="input__file-button">
+                           <span class="input__file-icon-wrapper"><img class="input__file-icon" src="download.png" alt="Выбрать файл" width="25"></span>
+                           <span class="input__file-button-text">Выберите файл</span>
+                        </label>
+                        <p id="file-name4"></p>
+                     </div>
+                </div>
+                <div class="task">
+                    <h1>Задача 5</h1><h2>Милые коробки для милых котиков</h2>
+                    <h3 class="task-text">Котам нужны коробки (не спрашивайте зачем), которые необходимо сделать из картонных листов размером a x a. Коробка должна быть открытой сверху и иметь квадратное основание. Коробка формируется в два этапа. Первый шаг: квадратные кусочки размера b x b вырезаются из углов картонного листа. Второй шаг: прямоугольные части сгибаются на 90 градусов внутрь коробки. По длине стороны картонного листа a необходимо найти такую высоту b коробки, для которой ее объем будет максимальным.</h3>
+                    <img class="task-image" src="box.png" alt="Фото коробки">
+                    <h4 class="task-input"><strong>Входные данные:</strong> Первая строка содержит количество коробок, которые нужно сделать. Каждая из следующих n строк содержит одно действительное число – длину стороны картонного листа a.</h4>
+                    <h4 class="task-output"><strong>Выходные данные:</strong> В выходной файл OUTPUT.TXT вывести в отдельной строке оптимальную высоту b, округленную до 10 десятичных знаков.
+                    </h4>
+                    <table>
+                        <tr class="table-titles">
+                            <th>Входные данные</th>
+                            <th>Выходные данные</th>
+                        </tr>
+                        <tr>
+                            <th>1<br>
+                                34</th>
+                            <th>5.666667</th>
+                        </tr>
+                    </table>
+                    <div class="input__wrapper">
+                        <input name="task5" type="file" id="input__file5" class="input input__file">
+                        <label for="input__file5" class="input__file-button">
+                           <span class="input__file-icon-wrapper"><img class="input__file-icon" src="download.png" alt="Выбрать файл" width="25"></span>
+                           <span class="input__file-button-text">Выберите файл</span>
+                        </label>
+                        <p id="file-name5"></p>
+                     </div>
+                </div>
+                <div class="task">
+                    <h1>Задача 6</h1><h2>Дорогая коммуналка</h2>
+                    <h3 class="task-text">Вика и Андрей переехали в новый дом и у них очень интересный тариф на горячую воду. Они платят 200 рублей за 100 литров. Каждый литр сверх этого значения стоит 4 рубля. Зарплата Вики и Андрей - Z рублей. В день зарплаты им также приходит письмо с информацией, сколько литров они потратили за месяц - A. Сколько денег останется у Вики и Андрея после оплаты за воду?
+                        </h3>
+                    <h4 class="task-input"><strong>Входные данные:</strong> В единственной строке входного файла INPUT.TXT содержатся Z - зарпалата Вики и Андрей и A - сколько литров воды они потратили за месяц.</h4>
+                    <h4 class="task-output"><strong>Выходные данные:</strong> В выходной файл OUTPUT.TXT выведите одно целое число - сколько денег останется после оплаты за воду?.
+                    </h4>
+                    <table>
+                        <tr class="table-titles">
+                            <th>Входные данные</th>
+                            <th>Выходные данные</th>
+                        </tr>
+                        <tr>
+                            <th>50000 350</th>
+                            <th>48800</th>
+                        </tr>
+                        <tr>
+                            <th>37654 879</th>
+                            <th>33938</th>
+                        </tr>
+                    </table>
+                    <div class="input__wrapper">
+                        <input name="task6" type="file" id="input__file6" class="input input__file">
+                        <label for="input__file6" class="input__file-button">
+                           <span class="input__file-icon-wrapper"><img class="input__file-icon" src="download.png" alt="Выбрать файл" width="25"></span>
+                           <span class="input__file-button-text">Выберите файл</span>
+                        </label>
+                        <p id="file-name6"></p>
+                     </div>
+                </div>
+                <div class="task">
+                    <h1>Задача 7</h1><h2>Dream Team</h2>
+                    <h3 class="task-text">Команда студентов принимает участие в конкурсе по математике. Известно, что в конкурсе N задач. Время на решение - 5 часов. Капитан команды делает расчёт, что его команда сможет решить X задач за первый час, а на каждую из оставшихся задач команда будет тратить ровно T минут. Напишите программу, которая подсчитает количество задач, которые команда сможет решить, при условии, что расчеты капитана команды верны.</h3>
+                    <h4 class="task-input"><strong>Входные данные:</strong> В единственной строке входного файла INPUT.TXT содержатся три числа: N - количество задач, X - количество задач, которые команда решит за первый час, T - количество минут на решение каждой из оставшихся задач.</h4>
+                    <h4 class="task-output"><strong>Выходные данные:</strong> В выходной файл OUTPUT.TXT выведите одно целое число - количество задач, которые успеет решить команда.
+                    </h4>
+                    <table>
+                        <tr class="table-titles">
+                            <th>Входные данные</th>
+                            <th>Выходные данные</th>
+                        </tr>
+                        <tr>
+                            <th>12 7 45</th>
+                            <th>12</th>
+                        </tr>
+                        <tr>
+                            <th>10 3 60</th>
+                            <th>7</th>
+                        </tr>
+                    </table>
+                    <div class="input__wrapper">
+                        <input name="task7" type="file" id="input__file7" class="input input__file">
+                        <label for="input__file7" class="input__file-button">
+                           <span class="input__file-icon-wrapper"><img class="input__file-icon" src="download.png" alt="Выбрать файл" width="25"></span>
+                           <span class="input__file-button-text">Выберите файл</span>
+                        </label>
+                        <p id="file-name7"></p>
+                     </div>
+                </div>
+                <div class="task">
+                    <h1>Задача 8</h1><h2>Коля Портер и загадочная дверь</h2>
+                    <h3 class="task-text">Коля Портер учится в Хогвартсе. Он знает страшный секрет: если 4 выключателя в комнате зельеварения включить в определенном порядке, то откроется таинственная дверь. Известно, что дверь открывается только в том случае, когда включены хотя бы два выключателя, которые расположены не рядом друг с другом. По заданному состоянию выключателей требуется определить: открыта ли магическая дверь?</h3>
+                    <h4 class="task-input"><strong>Входные данные:</strong> В единственной строке входного файла INPUT.TXT содержится строка, состоящая из четырех символов «!» или «0», описывающих состояния выключателей от первого до четвертого соответственно. Символ «!» обозначает, что выключатель находится в состоянии «включен», а «0» обозначает состояние «выключен».</h4>
+                    <h4 class="task-output"><strong>Выходные данные:</strong> В выходной файл OUTPUT.TXT выведите одно целое число - количество задач, которые успеет решить команда.
+                    </h4>
+                    <table>
+                        <tr class="table-titles">
+                            <th>Входные данные</th>
+                            <th>Выходные данные</th>
+                        </tr>
+                        <tr>
+                            <th>+--+</th>
+                            <th>On</th>
+                        </tr>
+                        <tr>
+                            <th>--++</th>
+                            <th>Off</th>
+                        </tr>
+                    </table>
+                    <div class="input__wrapper">
+                        <input name="task8" type="file" id="input__file8" class="input input__file">
+                        <label for="input__file8" class="input__file-button">
+                           <span class="input__file-icon-wrapper"><img class="input__file-icon" src="download.png" alt="Выбрать файл" width="25"></span>
+                           <span class="input__file-button-text">Выберите файл</span>
+                        </label>
+                        <p id="file-name8"></p>
+                     </div>
+                </div>
+                <div class="task">
+                    <h1>Задача 9</h1><h2>Счастливые даты</h2>
+                    <h3 class="task-text">Настя увлекается нумерологией. Она считает, что дата, записанная в формате ДДММГГГГ - счастливая, если в ней день делится на число 3, месяц - чётное число, а год – нечётное число. Например, дата «девятое октрября 2013 года» (09102013) является счастливой. А вот дата «11 июля 1997 года» (13061997) не является красивой, так как не выполнились все условия (день не делится на 3й). Насте надоело считать всё самой и она решила попросить вас написать программу, которая ей в этом поможет.
+                        </h3>
+                    <h4 class="task-input"><strong>Входные данные:</strong> В первой строке входного файла INPUT.TXT содержится корректная дата в виде последовательности десятичных цифр формата ДДММГГГГ. Такое представление даты можно рассматривать как восьмизначное целое число с одним возможным лидирующим нулём. Дата может быть любой в промежутке от 1 января 1 года (01010001) до 31 декабря 9999 года (31129999).</h4>
+                    <h4 class="task-output"><strong>Выходные данные:</strong> В выходной файл OUTPUT.TXT выведите «Lucky», если дата является счастливой, и «Bad» – в противном случае.</h4>
+                    <table>
+                        <tr class="table-titles">
+                            <th>Входные данные</th>
+                            <th>Выходные данные</th>
+                        </tr>
+                        <tr>
+                            <th>12022001</th>
+                            <th>Lucky</th>
+                        </tr>
+                        <tr>
+                            <th>08061997</th>
+                            <th>Bad</th>
+                        </tr>
+                    </table>
+                    <div class="input__wrapper">
+                        <input name="task9" type="file" id="input__file9" class="input input__file">
+                        <label for="input__file9" class="input__file-button">
+                           <span class="input__file-icon-wrapper"><img class="input__file-icon" src="download.png" alt="Выбрать файл" width="25"></span>
+                           <span class="input__file-button-text">Выберите файл</span>
+                        </label>
+                        <p id="file-name9"></p>
+                     </div>
+                </div>
+                <div class="task">
+                    <h1>Задача 10</h1><h2>Камень-ножницы-бумага</h2>
+                    <h3 class="task-text">Брат Дэн и сестра Алла обожают играть в Камень-ножницы-бумага. На счет три они одновременно выбирают один из трех предметов. Игра длится определенное, наперед установленное количество раундов N. Игрок, который выиграет большую часть раундов, объявляется победителем. По заданному количеству раундов и их исходам следует определить победителя. Следующие правила описывают правила победы:
+                        <ul>
+                            <li>Камень всегда побеждает Ножницы (Камень раздавливает Ножницы)</li>
+                            <li>Ножницы всегда побеждают Бумагу (Ножницы режут Бумагу)</li>
+                            <li>Бумага всегда бьет Камень (Бумага покрывает Камень)</li>
+                        </ul>
+                    </h3>
+                    <h4 class="task-input"><strong>Входные данные:</strong> В первой строке входного файла INPUT.TXT содержится количество игр N, сыгранных между Денисом и Аллой, в каждой последующей строчке результаты игры: одну из заглавных букв R (Камень), P (Бумага) или S (Ножницы), пробел и снова заглавную букву R, P или S. Первая буква обозначает выбор Дениса, вторая буква - выбор Аллы.
+                    </h4>
+                    <h4 class="task-output"><strong>Выходные данные:</strong> В выходной файл OUTPUT.TXT выведите «Denis Win», если выиграл первый игрок, и «Alla wins» – в противном случае. В случае ничьи вывести - «Draw»!</h4>
+                    <table>
+                        <tr class="table-titles">
+                            <th>Входные данные</th>
+                            <th>Выходные данные</th>
+                        </tr>
+                        <tr>
+                            <th>2<br>R P<br>S R</th>
+                            <th>Alla win</th>
+                        </tr>
+                        <tr>
+                            <th>1<br>P R</th>
+                            <th>Denis win</th>
+                        </tr>
+                    </table>
+                    <div class="input__wrapper">
+                        <input name="task10" type="file" id="input__file10" class="input input__file">
+                        <label for="input__file10" class="input__file-button">
+                           <span class="input__file-icon-wrapper"><img class="input__file-icon" src="download.png" alt="Выбрать файл" width="25"></span>
+                           <span class="input__file-button-text">Выберите файл</span>
+                        </label>
+                        <p id="file-name10"></p>
+                     </div>
+                </div>
+            </div>
+            <p id="error-mes"></p>
+            <input id="result" type="submit" value="Отправить решения!">
+        </form>
+    </main>
+    <script src="require.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
